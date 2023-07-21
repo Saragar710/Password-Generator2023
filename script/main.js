@@ -1,13 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var length=10;
-var upperCase ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lowerCase ="abcdefghijklmnopqrstuvwxyz";
-var numbers = "1234567890";
-var specialCharacters ="!@#$%^&*()?/";
+var upperCase ="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
+var lowerCase ="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+var numbers = "1,2,3,4,5,6,7,8,9,0";
+var specialCharacters ="!,@,#,$,%,^,&,*,(,),?,/,";
 var allChar ="upperCase, lowerCase, numbers, specialCharacters";
 
-return #generate
+
 
 // function generatePassword() {
 //   console.log("Thanks for clicking the button!")
