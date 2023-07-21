@@ -6,7 +6,7 @@ var lowerCase ="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
 var numbers = "1,2,3,4,5,6,7,8,9,0";
 var specialCharacters ="!,@,#,$,%,^,&,*,(,),?,/,";
 var allChar ="upperCase, lowerCase, numbers, specialCharacters";
-
+var length = 10;
 
 
 // function generatePassword() {
@@ -16,8 +16,22 @@ var allChar ="upperCase, lowerCase, numbers, specialCharacters";
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var password = 
-  var passwordText = document.querySelector("#password");
+
+  function generatePassword("8") {
+  function let(password) += " ";
+  function let(password) += ("upperCase(Math.floor(Math.random)()*[upperCase.length]");
+  function let(password) += ("lowerCase(Math.floor(Math.random)()*[lowerCase.length]");
+  function let(password) += ("numbers(Math.floor(Math.random)*[numbers.length]");
+  function let(password) += ("specialCharacters(Math.floor(Math.random)*[specialCharacters]");
+
+  while(length > password.length){
+    password + allChar[Math.floor(Math.random()*allChar.length)]
+  }
+
+
+  }
+    var password = 
+    var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
