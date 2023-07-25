@@ -5,6 +5,7 @@ var number = "1,2,3,4,5,6,7,8,9,0";
 var specialCharacter ="!,@,#,$,%,^,&,*,(,),?,/,";
 var allChar ="upperCase + lowerCase + number + specialCharacter";
 // var allChar = ("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,Z,Y,X,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,t,s,t,u,v,w,x,y,z,1,2,3,4,5,6,7,8,9,0,!,@,#,$,,%,^,&,*,(,),?,/,")
+//^^ defined all variable and what I wanted inside each 
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -15,7 +16,7 @@ generateBtn.addEventListener("click", writePassword)
 // Write password to the #password input
 function writePassword () {
   var correctPrompts = getPrompts();
- 
+ //prompts should all comeback true
   if(correctPrompts){
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -32,7 +33,7 @@ function writePassword () {
   }
   return password;
  }
-
+//defining prompts
  function getPrompts() {
    allChar = "";
 
