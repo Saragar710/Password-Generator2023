@@ -4,7 +4,7 @@ var lowerCase ="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
 var number = "1,2,3,4,5,6,7,8,9,0";
 var specialCharacter ="!,@,#,$,%,^,&,*,(,),?,/,";
 var allChar ="upperCase + lowerCase + number + specialCharacter";
-
+// var allChar = ("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,Z,Y,X,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,t,s,t,u,v,w,x,y,z,1,2,3,4,5,6,7,8,9,0,!,@,#,$,,%,^,&,*,(,),?,/,")
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -15,19 +15,15 @@ generateBtn.addEventListener("click", writePassword)
 // Write password to the #password input
 function writePassword () {
   var correctPrompts = getPrompts();
-  var passwordText = document.querySelector("#password");
-
-
+ 
   if(correctPrompts){
   var password = generatePassword();
-  
-
+  var passwordText = document.querySelector("#password");
   passwordText.value = password;
-  } else {
-    passwordText.value = "";
   }
 }
  
+//generates password because of prompts
  function generatePassword() {
   var password = "";
   for(var i = 0; i < characterLength; i++){
@@ -39,6 +35,7 @@ function writePassword () {
 
  function getPrompts() {
    allChar = "";
+
    characterLength = parseInt(prompt("How many characters do you want your password to be? (10 - 128 characters"));
 
    if (isNaN(characterLength) || characterLength < 10 || characterLength > 128) {
@@ -47,16 +44,16 @@ function writePassword () {
    }
  
     if (confirm("Do you want to use uppercase letters in your password?")){
-        allChar = allChar.concat("upperCase");
-    }
+        allChar = allChar.concat(upperCase);
+    } 
     if (confirm("Do you want to use lowerCase letters in your password?")) {
-        allChar = allChar.concat("lowerCase");
-    }
+        allChar = allChar.concat(lowerCase);
+    } 
     if (confirm("Do you want to use any numbers in your password?")) {
-        allChar = allChar.concat("number");
-    }  
+        allChar = allChar.concat(number);
+    } 
     if (confirm("Do you want to use any special characters in your password?")) {
-        allChar = allChar.concat("specialCharacters");
+        allChar = allChar.concat(specialCharacter);
     }
     return true;
   }
