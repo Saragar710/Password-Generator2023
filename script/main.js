@@ -33,7 +33,7 @@ function writePassword () {
   }
   return password;
  }
-//defining prompts
+//defining prompts to get a random password
  function getPrompts() {
    allChar = "";
 
@@ -42,8 +42,9 @@ function writePassword () {
    if (isNaN(characterLength) || characterLength < 10 || characterLength > 128) {
     alert("Please try again. Character length must be a number");
     return false;
-   }
- 
+
+    } 
+
     if (confirm("Do you want to use uppercase letters in your password?")){
         allChar = allChar.concat(upperCase);
     } 
